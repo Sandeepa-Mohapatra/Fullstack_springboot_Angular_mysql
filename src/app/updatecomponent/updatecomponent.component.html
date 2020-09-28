@@ -1,0 +1,25 @@
+<div class="updatemodel">
+<mat-dialog-content class="mat-typography">
+  
+  <div>
+                      <div>
+                          <div class="container">
+                            <div class="form-group mt-5">
+                                <label for="bookname">Book Name</label><br>
+                                <input type="text" name="bookname" [(ngModel)]="data1.data.bookname" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="bookname">Author Name</label><br>
+                                <input type="text" placeholder="Enter Author name" name="authorname" id="authorname" [(ngModel)]="data1.data.authorname" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookname">Price</label><br>
+                                <input type="text" name="price" placeholder="Enter Price of the book" id="price" [(ngModel)]="data1.data.price" class="form-control" required>
+                            </div>
+                            <button type="button" class="btn btn-danger ml-5" (click)="updateBookName(data1.data)" >Update</button>
+                          </div>
+                        </div>
+                      </div>
+</mat-dialog-content>
+
+</div>

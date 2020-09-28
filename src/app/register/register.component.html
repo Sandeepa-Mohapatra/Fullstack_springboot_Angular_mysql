@@ -1,0 +1,32 @@
+<div>
+    <h3 class="text-center" *ngIf="message">{{message}}</h3>
+</div>
+<div class="container mr-5">
+    <div class="row">
+        <div class="col-lg-8 col-sm-8 col-xs-8">
+            <div class="card bg-light text-dark mt-5 ml-5 rounded-lg">
+            <h4 class="text-center mt-4 mb-4">Book Registration</h4>
+            <form class="pl-5 pr-5">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="bookname">Book Name</label><br>
+                        <input type="text" placeholder="Enter book name" name="bookname" id="bookname" [(ngModel)]="bookname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookname">Author Name</label><br>
+                        <input type="text" placeholder="Enter Author name" name="authorname" id="authorname" [(ngModel)]="authorname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookname">Price</label><br>
+                        <input type="text" name="price" placeholder="Enter Price of the book" id="price" [(ngModel)]="price" class="form-control" required>
+                    </div>
+                    <div class="form-group text-center mt-5">
+                        <input type="submit" name="register" id="price" class="btn btn-success bg-primary text-white text-center" (click)="registerNow()">
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    </div>
+
+</div>
